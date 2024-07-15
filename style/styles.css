@@ -70,11 +70,75 @@
 .banner-image{
     width: 100%;
 }
+
+/* team and feature related gap */
+.teams{
+    align-items: center;
+    margin-left: 200px;
+    
+    
+}
+
+.team-image-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 /* responsive media query */
 @media screen and (max-width: 576px) {
-    .navbar, .nav-links{
+    .navbar,
+    .nav-links, 
+    .teams{
         flex-direction: column;
          
     }
     
+    .team-image-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .our-feature{
+        margin-left: 20px;
+    }
+
 }
+
+/* medium size device */
+@media screen and (min-width: 576px) and (max-width:992px) {
+    .teams{
+        flex-direction: column;
+        
+    }
+    .our-feature{
+        margin-left: 50px;
+    }
+    
+}
+
+.main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main > section{
+    margin-top: 130px;
+}
+
+.our-feature{
+    
+    max-width: 530px;
+    margin-left: 130px;
+
+}
+
+.section-tittle{
+    font-size: 2.8rem;
+    font-size: 700;
+
+}
+#quick-list{
+    font-weight: 500;
+}
+.text-primary{
+    color: #FF900E;
+}
+
